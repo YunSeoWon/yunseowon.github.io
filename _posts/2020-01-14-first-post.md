@@ -1,11 +1,11 @@
 ---
-title: "github.io 개발 블로그 시작하기"
-excerpt: "Github 블로그를 시작하기로 했다."
-categories:
-- Blog
-tags:
-- Blog
-last_modified_at: 2020-01-14T14:39:00-00:00
+layout: post
+title: github.io 개발 블로그 시작하기
+author: YunSeoWon
+date: '2020-01-14 17:35:23'
+category: etc
+summary: 블로그를 시작하며...
+thumbnail: blog.jpg
 ---
 
 
