@@ -138,7 +138,7 @@ compress_html:
 collections:
  - products
 
-disqus_shortname: 'yunseowon-blog'
+disqus_shortname: 'https-yunseowon-github-io'
 
 
 # Exclude from processing.
