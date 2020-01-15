@@ -135,9 +135,11 @@ compress_html:
 #   permalinks:
 #     category: '/category/:name/'
 
-
 collections:
  - products
+
+disqus_shortname: 'yunseowon-blog'
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
