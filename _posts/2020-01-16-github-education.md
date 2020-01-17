@@ -99,7 +99,7 @@ add 명령어를 수행하면 각 3개의 파일은 staged 상태로 변하며, 
 
 그러고 난 후 commit 명령어를 수행하면 먼저 루트 디렉토리와 각 하위 디렉토리의 트리 개체를 check-sum과 함께 저장소에 저장된다. [92ec2] 그 다음에 커밋 객체를 만들고 메타데이터와 루트 디렉토리 트리 개체를 가리키는 포인터 정보를 커밋 객체에 넣어 저장한다.[98ca9]
 
-![commit-and-tree](../assets/img/posts/200116-git/commit-and-tree.png)
+![commit-and-tree](200116-git/commit-and-tree.png)
 
 
 
