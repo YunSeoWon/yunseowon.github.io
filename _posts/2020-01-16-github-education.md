@@ -86,7 +86,7 @@ Git이 브랜치를 어떻게 다루는지 알려면 Git이 데이터를 저장�
 
 #### Git이 데이터를 저장하는 방법
 
- 
+ https://yunseowon.github.io/etc/2020/01/16/github-education/200116-git/commit-and-tree.png
 
 먼저 다음 명령어를 입력했다고 하자.
 
