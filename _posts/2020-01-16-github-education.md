@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [NHN Basecamp] Github 교육
+title: NHN Basecamp Github 교육
 author: YunSeoWon
 date: '2020-01-16 19:30:00'
 category: etc
@@ -70,7 +70,7 @@ Git에서 파일을 관리할 때 파일의 상태는 3가지가 있다.
 
 **.gitignore**: 버전관리를 강제로 하지 않겠다고 선언하는 설정파일
 
-https://www.gitignore.io/에서 자동으로 만들 수도 있다.
+https://www.gitignore.io/ 에서 자동으로 만들 수도 있다.
 
 
 
