@@ -101,7 +101,7 @@ add 명령어를 수행하면 각 3개의 파일은 staged 상태로 변하며, 
 
 그러고 난 후 commit 명령어를 수행하면 먼저 루트 디렉토리와 각 하위 디렉토리의 트리 개체를 check-sum과 함께 저장소에 저장된다. [92ec2] 그 다음에 커밋 객체를 만들고 메타데이터와 루트 디렉토리 트리 개체를 가리키는 포인터 정보를 커밋 객체에 넣어 저장한다.[98ca9]
 
-![commit-and-tree](/assets/img/posts/200116-git/commit-and-tree.png)
+{:class="img-fluid"}![commit-and-tree](/assets/img/posts/200116-git/commit-and-tree.png)
 
 
 
@@ -109,7 +109,7 @@ add 명령어를 수행하면 각 3개의 파일은 staged 상태로 변하며, 
 
 그리고 다시 파일을 수정하고 커밋하면 이전 커밋이 무엇인지도 저장한다.
 
-![](/assets/img/posts/200116-git/commits-and-parents.png)
+![](/assets/img/posts/200116-git/commits-and-parents.png){:class="img-fluid"}
 
 Git이 이러한 방식으로 데이터를 저장하기 때문에 커밋 상태를 이전 커밋 상태로 되돌리거나 복구할 수 있다.
 
@@ -117,11 +117,11 @@ Git이 이러한 방식으로 데이터를 저장하기 때문에 커밋 상태�
 
 **그리고 Git의 브랜치는 커밋을 가리키는 포인터이다.** 기본적으로 Git은 master 브랜치를 만든다. 
 
-![](/assets/img/posts/200116-git/branch1.png)
+![](/assets/img/posts/200116-git/branch1.png){:class="img-fluid"}
 
 
 
-![](/assets/img/posts/200116-git/branch2.png)
+![](/assets/img/posts/200116-git/branch2.png){:class="img-fluid"}
 
   
 
@@ -149,13 +149,13 @@ Git이 이러한 방식으로 데이터를 저장하기 때문에 커밋 상태�
 
 **merge 전**
 
-![](/assets/img/posts/200116-git/pre-merge.png)
+![](/assets/img/posts/200116-git/pre-merge.png){:class="img-fluid"}
 
   
 
 **merge 후**
 
-![](/assets/img/posts/200116-git/post-merge.png)
+![](/assets/img/posts/200116-git/post-merge.png){:class="img-fluid"}
 
   
 
@@ -212,7 +212,7 @@ master와 develop 외에 팀 멤버들이 병렬로 일할 수 있도록 도와�
 
     
 
-  ![](/assets/img/posts/200116-git/gitflow.png)
+  ![](/assets/img/posts/200116-git/gitflow.png){:class="img-fluid"}
 
   
 
@@ -226,17 +226,17 @@ Git-flow 전략을 이용했을 때, 이득이라고 생각되는 부분은 먼�
 
   
 
-  
+   
 
 ## 원격 저장소
 
-로컬 저장소가 아닌 웹 상에서 관리되는 저장소이다.
+로컬 저장소가 아닌 웹 상에서 관리되는 저장소이다.  
 
-  
+   
 
 ### Fetch
 
-원격 저장소의 변경 사항을 내려받는 것을 fetch라고 한다. 하지만, 변경 사항만을 내려받았을 뿐 아직 로컬 브랜치에 반영이 되지 않은 상태이다. 따라서 fetch를 수행하면 수동으로 원격 브랜치를 로컬 브랜치로 머지해야 한다.
+원격 저장소의 변경 사항을 내려받는 것을 fetch라고 한다. 하지만, 변경 사항만을 내려받았을 뿐 아직 로컬 브랜치에 반영이 되지 않은 상태이다. 따라서 fetch를 수행하면 수동으로 원격 브랜치를 로컬 브랜치로 머지해야 한다.  
 
   
 
@@ -258,13 +258,13 @@ push는 로컬 저장소의 변경 사항을 원격 저장소로 올리는 것�
 
 하지만, 이 변경사항은 develop에 반영이 되어야 하는데 feature 브랜치에서 push한다고 해서 develop에 반영이 되지는 않는다. 즉, 원격 저장소에 올려져 있는 feature 브랜치를 develop 브랜치에 merge해야 하는데, 이를 요청하는 과정을 **pull request**라고 한다.
 
-![](/assets/img/posts/200116-git/pre-pr.png)
+![](/assets/img/posts/200116-git/pre-pr.png){:class="img-fluid"}
 
   
 
 하지만, 이 때 1번 개발자가 개발을 완료했다고 해서 마음대로 develop에 머지하면 문제가 생길 수도 있다. 이 개발 코드가 맞는지 여러 개발자가 따져봐야 하는데, pull request로 "머지를 하려고 하는데 제 코드를 봐주세요"라고 다른 개발자들에게 요청하는 것이다. 그러면 다른 개발자들은 1번의 코드를 보고 리뷰를 하고, 수정사항이 필요하다. 또는 merge해도 괜찮다. 등 여러 의견을 제시할 수 있다. 여러 의견을 조합한 후 모두 다 괜찮다고 생각되면 PR을 close할 수 있다. close가 되는 순간 merge가 된다. 그리고 git-flow의 전략에 의해 feature/1을 삭제한다.(이건 수동으로..)
 
-![](/assets/img/posts/200116-git/post-pr.png)
+![](/assets/img/posts/200116-git/post-pr.png){:class="img-fluid"}
 
   
 
@@ -274,13 +274,13 @@ push는 로컬 저장소의 변경 사항을 원격 저장소로 올리는 것�
 
 위의 그림처럼 1번 개발자가 PR을 통해서 merge를 했고, 3번 개발자가 개발을 완료해서 원격 저장소에 올린 상태라고 가정하자. 다행히도, ccab와 ccaa 커밋의 코드들이 서로 독립적으로 변경되었다면 (서로 다른 파일이 변경되었다면), 3번 개발자가 PR을 통해 merge가 되어도 아무런 문제가 없다. (실제로 merge가 된다.) 하지만, 서로 공통된 부분을 다르게 수정하였다면, merge가 되기는 하지만 충돌이 났다고 메세지가 뜬다.
 
-![](/assets/img/posts/200116-git/conflict.png)
+![](/assets/img/posts/200116-git/conflict.png){:class="img-fluid"}
 
   
 
 그리고 충돌난 파일을 살펴보면 다음과 같이 충돌이 어디서 발생했는지가 표시된다.
 
-![](/assets/img/posts/200116-git/conflictfile.png)
+![](/assets/img/posts/200116-git/conflictfile.png){:class="img-fluid"}
 
   
 
