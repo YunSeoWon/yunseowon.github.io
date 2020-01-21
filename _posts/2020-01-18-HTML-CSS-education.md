@@ -1,20 +1,20 @@
 ---
 layout: post
-title: NHN Basecamp HTML/CSS 교육
+title: NHN Basecamp HTML/CSS 교육(1)
 author: YunSeoWon
 date: '2020-01-18 11:30:00'
 category: html
-summary: NHN Basecamp HTML/CSS 교육
+summary: NHN Basecamp HTML/CSS 교육(1)
 thumbnail: html_css.jpg
 ---
 
 
 
-# HTML/CSS 교육
+# HTML/CSS 교육 (1)
 
 NHN 신입 교육으로 HTML/CSS 교육을 들었다. 학생 때 프론트엔드 부분을 거의 다루지 않았고, HTML의 태그가 다른 프로그래밍 언어와는 다른 형식으로 되어 있어서 꺼려했었는데 막상 입사하니까 백엔드와 프론트엔드까지 전부 다루게 될 줄은 몰랐다.. 나에게는 조금 생소한 언어지만, 이 기회를 통해서 태그 공포증(?)을 없앴으면 좋겠다.
 
-이 교육은 총 4시간으로 이루어져 있었고, HTML을 먼저 배운 후 CSS를 배우는 것으로 진행되었다.
+이 교육은 총 4시간으로 이루어져 있었고, HTML을 먼저 배운 후 CSS를 배우는 것으로 진행되었다. 이 게시물은 컨테이너 정렬 전 까지 다룰 것이다.
 
   
 
@@ -478,7 +478,7 @@ CSS 박스 모델이란, 브라우저가 엘림먼트를 렌더링 할 때 참�
 
 구성요소는 다음과 같다.
 
-![](../assets/img/posts/200118-git/css-box.png){:class="img-fluid"}
+![css-box](/assets/img/posts/200118-git/css-box.png)
 
 
 
@@ -701,3 +701,65 @@ p, span {
 visibility: hidden과 비슷한 역할을 하지만 엘리먼트의 영역을 유지해주냐의 차이점이 있다.
 
 visibility: hidden은 엘리먼트의 영역을 유지해주지만, display: none은 유지하지 않는다.
+
+
+
+### Flexible 박스
+
+Flexible box는 모든 모던 브라우저에서 지원하는 박스 모델이며, 성능면에서도 이전 레이아웃 모델보다 렌더링 시간이 빠르다는 장점이 있다.
+
+보통 부모 컨테이너에서 박스모델을 설정하여 자식 컨테이너가 어떤식으로 배치하는지 정의할 수 있다. 배치 방법은 **가로 배치**와 **세로 배치**가 있다. CSS Flexible 박스를 설정할 때는, 부모 컨테이너에게 **display: flex**라는 스타일을 적용하면 된다.
+
+
+
+#### 가로배치
+
+가로배치는 부모 컨테이너에서 flex-direction: row로 설정하면 된다.(명시적인 방법)  하지만, flexible box의 기본 방향은 가로방향이기 때문에 생략하여도 상관없다.
+
+```css
+.container {
+    display: flex;
+    /* 생략 가능 */
+    flex-direction: row;
+}
+```
+
+#### 세로배치
+
+세로배치는 flex-direction: column으로 설정하면 된다.
+
+```css
+.container {
+    display: flex;
+    flex-direction: column;
+}
+```
+
+
+
+### Flexible box에서 자식 컨테이너의 공간 설정
+
+Flexible box에서는 먼저 배치방법을 설정할 수 있다. 배치방법을 설정한 후 자식 컨테이너에게 공간 비율을 설정할 수 있는데 설정 방법은 다음과 같다.
+
+```css
+.child:nth-child(1) {
+	flex: 2;
+}
+.child:nth-child(2) {
+	flex: 1;
+}
+.child:nth-child(3) {
+  width: 100px;
+	flex: none;
+}
+```
+
+* nth:child(x)는 자식 컨테이너의 x번째 child를 찾는 selector이다.
+* flex: x;로 비율을 정할 수 있다. 여기서 전체 비율은 child의 flex 값의 합이며, 각각은 그 합에 대한 flex 값의 비율로 크기가 정해진다.
+* flex: none;으로 설정되어 있는 child는 원래 지정된 공간을 차지하며, none으로 설정되어 있는 지정된 공간이 채워진 다음, 나머지 공간을 비율로 나눠서 나머지 컨테이너가 공간을 차지하게 된다.
+
+
+
+
+
+내용이 길어서 두 편으로 나뉘었다. 다음 편에는 컨테이너 정렬과 관련된 내용으로 정리할 것이다.
