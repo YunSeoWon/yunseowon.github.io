@@ -63,6 +63,8 @@ thumbnail: html_css.jpg
 
 ![before-block](/assets/img/posts/200118-git/before-block.png){:class="img-fluid"}
 
+
+
 가로 정렬은 다음과 같이 한다.
 
 ```css
@@ -73,6 +75,8 @@ thumbnail: html_css.jpg
 ```
 
 ![hori-block](/assets/img/posts/200118-git/hori-block.png){:class="img-fluid"}
+
+
 
 #### Inline의 가로 정렬
 
@@ -119,6 +123,8 @@ inline 적용을 다음과 같이 하자.
 
 ![hori-inline](/assets/img/posts/200118-git/hori-inline.png){:class="img-fluid"}
 
+
+
 세로 정렬은 line-height 속성으로 조절할 수 있다.
 
 ```css
@@ -137,6 +143,8 @@ inline 적용을 다음과 같이 하자.
 ```
 
 ![vert-inline](/assets/img/posts/200118-git/vert-inline.png){:class="img-fluid"}
+
+
 
 하지만, 결과를 보면 세로 정렬은 block의 가로 정렬과 달리, 높이를 다르게 설정할 수 없다. 각각의 line-height가 다를 경우, 위치는 가장 큰 값으로 결정된다.
 
@@ -349,6 +357,9 @@ z-index는 말 그대로 z축의 좌표라고 생각하면 된다. z-index값이
 
 ![z-index2](/assets/img/posts/200118-git/z-index2.png){:class="img-fluid"}
 
+
+
 하지만, box3과 box5의 z-index가 동일(=3)할 경우, 나중에 선언된 box5가 box3을 덮게 된다.
 
-![z-index3](/Users/yunseowon/Documents/yunseowon.github.io/assets/img/posts/200118-git/z-index3.png)
+![z-index3](/assets/img/posts/200118-git/z-index3.png){:class="img-fluid"}
+
