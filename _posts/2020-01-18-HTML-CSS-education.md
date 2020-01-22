@@ -478,7 +478,7 @@ CSS 박스 모델이란, 브라우저가 엘림먼트를 렌더링 할 때 참�
 
 구성요소는 다음과 같다.
 
-![css-box](/assets/img/posts/200118-git/css-box.png)
+![css-box](/assets/img/posts/200118-git/css-box.png){:class="img-fluid"}
 
 
 
