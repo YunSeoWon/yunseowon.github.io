@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Etc
-permalink: /blog/categories/etc
+title: Database
+permalink: /blog/categories/database
 ---
 
 <h5> Posts by Category : {{ page.title }} </h5>
