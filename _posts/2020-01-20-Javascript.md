@@ -14,6 +14,10 @@ thumbnail: javascript.png
 
 # Javascript DOM
 
+> 교육 내용 출처: NHN  기술교육 - JavaScript 기본 (김성호 책임)
+
+
+
 이번에는 Javascript DOM에 대한 교육을 들었다. Javascript에서 HTML의 객체를 다루기 위해 알아야 할 것들에 대해 설명하였다. 7시간 동안 진행되는 교육이라 많은 것들을 배웠고 동시에 TodoList를 만드는 것을 주제로 실습도 하면서 DOM에 관해 배웠다. 
 
 
